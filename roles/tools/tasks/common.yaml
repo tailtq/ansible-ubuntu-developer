@@ -1,0 +1,6 @@
+- name: Install tools
+  apt:
+    name:
+      - git
+      - nginx
+    state: latest

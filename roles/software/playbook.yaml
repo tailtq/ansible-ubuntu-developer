@@ -1,0 +1,5 @@
+- name: Install general tools
+  hosts:
+    - localhost
+  tasks:
+    - include: tasks.yaml
