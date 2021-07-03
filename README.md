@@ -18,5 +18,4 @@ unzip master.zip && cd ansible-ubuntu-developer-master
 # install packages
 ansible-playbook playbook.yaml -i inventory.txt --ask-become-pass
 ```
-
-
+__Note:__ If gathering facts step runs slowly in the play 2, you can stop and re-run it.
