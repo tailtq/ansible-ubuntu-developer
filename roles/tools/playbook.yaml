@@ -1,0 +1,14 @@
+- name: Install development tools
+  hosts:
+    - localhost
+  vars:
+    - username: '{{ lookup("env", "USER") }}'
+    - conda_path: /home/{{ username }}/anaconda3
+  tasks:
+    - include: tasks/common.yaml
+
+    - include: tasks/docker.yaml
+
+    - include: tasks/nvm.yaml
+    
+    - include: tasks/anaconda.yaml
