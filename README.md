@@ -12,10 +12,8 @@ sudo apt install curl ansible
 # download source
 cd /tmp && curl -L -O https://github.com/tailtq/ansible-ubuntu-developer/archive/refs/heads/master.zip
 
-# unzip file
-unzip master.zip
-
-cd ansible-ubuntu-developer-master
+# unzip file & 
+unzip master.zip && cd ansible-ubuntu-developer-master
 
 # install packages
 ansible-playbook playbook.yaml -i inventory.txt --ask-become-pass
