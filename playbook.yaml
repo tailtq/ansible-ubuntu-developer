@@ -1,2 +1,2 @@
-# - include: roles/software/playbook.yaml
+- include: roles/software/playbook.yaml
 - include: roles/tools/playbook.yaml
