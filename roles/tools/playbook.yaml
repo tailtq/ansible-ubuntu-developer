@@ -3,7 +3,7 @@
     - localhost
   vars:
     - username: '{{ lookup("env", "USER") }}'
-    - conda_path: /home/{{ username }}/anaconda34
+    - conda_path: /home/{{ username }}/anaconda3
   tasks:
     - include: tasks/common.yaml
 

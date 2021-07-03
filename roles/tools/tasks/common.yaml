@@ -1,4 +1,5 @@
 - name: Install tools
+  become: yes
   apt:
     name:
       - git
