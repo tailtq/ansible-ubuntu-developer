@@ -18,4 +18,6 @@ unzip master.zip && cd ansible-ubuntu-developer-master
 # install packages
 ansible-playbook playbook.yaml -i inventory.txt --ask-become-pass
 ```
-__Note:__ If gathering facts step runs slowly in the play 2, you can stop and re-run it.
+__Note:__ 
+- If gathering facts step runs slowly in the play 2, you can stop and re-run it.
+- This playbook currently works on Ubuntu 20.04 and I'm not sure about other version, because I encountered error in Ubuntu 18.04.
